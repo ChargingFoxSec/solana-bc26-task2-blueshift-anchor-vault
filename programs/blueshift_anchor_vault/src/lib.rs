@@ -23,7 +23,6 @@ pub mod blueshift_anchor_vault {
             Rent::get()?.minimum_balance(0),
             VaultError::InvalidAmount
         );
-        use anchor_lang::system_program::{transfer, Transfer};
 
         transfer(
             CpiContext::new(
